@@ -1,2 +1,2 @@
-# bit_wrap
-API wrapper for bittrex
+# bit_bind
+Custom API binding for bittrex

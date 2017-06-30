@@ -7,7 +7,7 @@ import urllib
 BASE_URL = 'https://bittrex.com/api/v1.1/{}/{}'
 
 
-class BittrexAPIWrapper(object):
+class BittrexAPIBinder(object):
 
     def __init__(self, api_key, api_secret, lower_bound=None, upper_bound=None):
         self.api_key = api_key
@@ -46,5 +46,5 @@ class BittrexAPIWrapper(object):
         return resp
 
 
-bit = BittrexAPIWrapper('xxxxxxxxxxxxxxxxx', 'zzzzzzzzzzzzzzz')
+bit = BittrexAPIBind('xxxxxxxxxxxxxxxxx', 'zzzzzzzzzzzzzzz')
 print(('{:.8f}').format(bit.get_current_value('BTC', 'VOX')))
