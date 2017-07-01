@@ -13,7 +13,7 @@ setup(
     description = "Bittrex SMS Notifier",
     license = "MIT",
     keywords = "sms bittrex",
-    url = "https://github.com/hthompson6/bit-notifier",
+    url = "https://github.com/hthompson6/bit-bind",
 
     long_description = open('README.md').read(),
     classifiers = [
@@ -22,6 +22,5 @@ setup(
       'Operating System :: OS Independent',
       'License :: OSI Approved :: MIT License',
       'Development Status :: 3 - Alpha',
-      'Topic :: Office/Business :: Financial',
     ]
 )
