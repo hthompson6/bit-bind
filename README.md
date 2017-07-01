@@ -3,7 +3,7 @@ Custom API bindings for bittrex
 
 ## Installation
 ```
-$ pip install bit_bind
+$ pip install bit-bind
 ```
 
 ### Install from source
