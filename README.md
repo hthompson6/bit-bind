@@ -8,9 +8,9 @@ $ pip install bit-bind
 
 ### Install from source
 ```
-$ git clone  https://github.com/hthompson6/bit_bind.git
-$ cd bit_bind
-$ python setup.py install
+$ git clone  https://github.com/hthompson6/bit-bind.git
+$ cd bit-bind
+$ python setup.py install -e .
 ```
 
 ## Usage
