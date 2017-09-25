@@ -31,7 +31,7 @@ BASE_URL = 'https://bittrex.com/api/v1.1/{}/{}'
 
 class BittrexAPIBind(object):
 
-    def __init__(self, api_key, api_secret):
+    def __init__(self, api_key=None, api_secret=None):
         self.api_key = api_key
         self.api_secret = api_secret
 
@@ -56,6 +56,10 @@ class BittrexAPIBind(object):
             request_header = dict(apisign=api_sign)
 
         return requests.get(request_url, headers=request_header).json()
+
+    def get_markets_summaries(self):
+        resp = self._api_query('public', 'getmarketsummaries')
+        return resp['result']
 
     def get_market_summary(self, currency_base, currency_market):
         market = ('{}-{}').format(currency_base, currency_market)
