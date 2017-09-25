@@ -57,7 +57,7 @@ class BittrexAPIBind(object):
 
         return requests.get(request_url, headers=request_header).json()
 
-    def get_markets_summaries(self):
+    def get_market_summaries(self):
         resp = self._api_query('public', 'getmarketsummaries')
         return resp['result']
 
