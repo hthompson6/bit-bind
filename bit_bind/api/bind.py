@@ -67,6 +67,12 @@ class BittrexAPIBind(object):
         market = resp['result'][0]
         return market
 
+    def get_ticker_last(self, currency_base, currency_market):
+        market = ('{}-{}').format(currency_base, currency_market)
+        resp = self._api_query('public', 'getticker', market=market)
+        market = resp['result']['Last']
+        return market
+
     def get_balances(self):
         resp = self._api_query('account', 'getbalances')
         cnt = -1
